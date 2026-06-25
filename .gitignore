@@ -2,3 +2,4 @@ venv
 *.npz
 *.h5
 *.pkl
+traffic-env
