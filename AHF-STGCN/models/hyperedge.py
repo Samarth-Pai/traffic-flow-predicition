@@ -9,30 +9,34 @@ class AdaptiveHyperedgeGenerator(nn.Module):
     def __init__(
         self,
         num_nodes,
-        embed_dim=32,
-        num_hyperedges=64
+        embed_dim,
+        num_hyperedges
     ):
         super().__init__()
-
-        self.num_nodes = num_nodes
-        self.num_hyperedges = num_hyperedges
-
-        self.node_embeddings = nn.Parameter(
-            torch.randn(num_nodes, embed_dim)
-        )
 
         self.hyperedge_embeddings = nn.Parameter(
             torch.randn(num_hyperedges, embed_dim)
         )
 
-    def forward(self):
+    def forward(self, x):
 
-        scores = torch.matmul(
-            self.node_embeddings,
-            self.hyperedge_embeddings.T
+        self.node_encoder = nn.Sequential(
+            nn.Conv1d(64, 64, 1),
+            nn.ReLU(),
+            nn.Conv1d(64, 64, 1)
         )
 
-        H = F.softmax(scores, dim=-1)
+        node_repr = x.mean(dim=-1)
+        node_repr = self.node_encoder(node_repr)
 
-        return H
-    
+        scores = torch.einsum(
+            "bcn,ec->bne",
+            node_repr,
+            self.hyperedge_embeddings
+        )
+
+        H = torch.softmax(scores, dim=-1)
+
+        Dv = H.sum(dim=-1, keepdim=True) + 1e-6
+
+        return H / Dv

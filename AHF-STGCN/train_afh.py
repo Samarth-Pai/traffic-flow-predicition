@@ -1,4 +1,3 @@
-
 import os
 import sys
 file_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,7 +19,7 @@ from lib.TrainInits import print_model_parameters
 
 #*************************************************************************#
 Mode = 'Train'
-DEBUG = 'True'
+DEBUG = 'False'
 DATASET = 'METRLA'      #PEMSD4 or PEMSD8
 DEVICE = 'cuda:0'
 MODEL = 'AGCRN'

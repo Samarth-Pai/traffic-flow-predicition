@@ -50,7 +50,7 @@ class HypergraphAttention(nn.Module):
         )
 
         hyper_nodes = torch.einsum(
-            "btnc,ne->btec",
+            "btnc,bne->btec",
             x,
             H
         )
@@ -75,7 +75,7 @@ class HypergraphAttention(nn.Module):
         )
 
         node_out = torch.einsum(
-            "btec,ne->btnc",
+            "btec,bne->btnc",
             hyper_out,
             H
         )

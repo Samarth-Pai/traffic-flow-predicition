@@ -16,7 +16,7 @@ class AHFBlock(nn.Module):
         num_nodes,
         channels=64,
         num_hyperedges=64,
-        embed_dim=32
+        embed_dim=64
     ):
         super().__init__()
 
@@ -28,7 +28,7 @@ class AHFBlock(nn.Module):
         self.hyperedge_generator = (
             AdaptiveHyperedgeGenerator(
                 num_nodes=num_nodes,
-                embed_dim=embed_dim,
+                embed_dim=channels,
                 num_hyperedges=num_hyperedges
             )
         )
@@ -54,7 +54,8 @@ class AHFBlock(nn.Module):
 
         temporal_features = self.temporal(x)
 
-        H = self.hyperedge_generator()
+        H = self.hyperedge_generator(temporal_features)
+
 
         spatial_features = self.hypergraph_attention(
             temporal_features,
