@@ -1,0 +1,12 @@
+2026-07-13 18:18: Experiment log path in: C:\Users\samar\traffic-flow-predicition\DHFORMER\experiments\METRLA\20260713181829
+2026-07-13 18:18: Train Epoch 1: 0/374 Loss: 53.584766
+2026-07-13 18:25: Train Epoch 1: 20/374 Loss: 38.247524
+2026-07-13 18:32: Train Epoch 1: 40/374 Loss: 12.119231
+2026-07-13 18:40: Train Epoch 1: 60/374 Loss: 8.307137
+2026-07-13 18:51: Train Epoch 1: 80/374 Loss: 7.303449
+2026-07-13 19:01: Train Epoch 1: 100/374 Loss: 6.635318
+2026-07-13 19:09: Train Epoch 1: 120/374 Loss: 6.214169
+2026-07-13 19:16: Train Epoch 1: 140/374 Loss: 6.281370
+2026-07-13 19:26: Train Epoch 1: 160/374 Loss: 5.199350
+2026-07-13 19:34: Train Epoch 1: 180/374 Loss: 6.026122
+2026-07-13 19:44: Train Epoch 1: 200/374 Loss: 6.089342
