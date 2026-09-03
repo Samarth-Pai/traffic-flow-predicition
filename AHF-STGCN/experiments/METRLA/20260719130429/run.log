@@ -1,0 +1,16 @@
+2026-07-19 13:04: Experiment log path in: C:\Users\samar\traffic-flow-predicition\AHF-STGCN\experiments\METRLA\20260719130429
+2026-07-19 13:07: Horizon 01, MAE: 2.70, RMSE: 6.82, MAPE: 6.2719%, R2: 0.9104
+2026-07-19 13:07: Horizon 02, MAE: 3.29, RMSE: 8.52, MAPE: 7.6565%, R2: 0.8602
+2026-07-19 13:07: Horizon 03, MAE: 3.77, RMSE: 9.73, MAPE: 8.7721%, R2: 0.8178
+2026-07-19 13:07: Horizon 04, MAE: 4.20, RMSE: 10.75, MAPE: 9.8051%, R2: 0.7774
+2026-07-19 13:07: Horizon 05, MAE: 4.63, RMSE: 11.68, MAPE: 10.7473%, R2: 0.7372
+2026-07-19 13:07: Horizon 06, MAE: 5.02, RMSE: 12.44, MAPE: 11.6041%, R2: 0.7020
+2026-07-19 13:07: Horizon 07, MAE: 5.38, RMSE: 13.12, MAPE: 12.4360%, R2: 0.6687
+2026-07-19 13:07: Horizon 08, MAE: 5.72, RMSE: 13.76, MAPE: 13.2362%, R2: 0.6357
+2026-07-19 13:07: Horizon 09, MAE: 6.02, RMSE: 14.26, MAPE: 13.9821%, R2: 0.6086
+2026-07-19 13:07: Horizon 10, MAE: 6.29, RMSE: 14.69, MAPE: 14.6626%, R2: 0.5844
+2026-07-19 13:07: Horizon 11, MAE: 6.57, RMSE: 15.11, MAPE: 15.3059%, R2: 0.5607
+2026-07-19 13:07: Horizon 12, MAE: 6.84, RMSE: 15.55, MAPE: 16.0116%, R2: 0.5347
+2026-07-19 13:07: Average Horizon, MAE: 5.04, RMSE: 12.49, MAPE: 11.7076%, R2: 0.6998
+2026-07-19 13:07: Model Parameters: 187212
+2026-07-19 13:07: Error exporting results to CSV: [Errno 2] No such file or directory: 'c:\\Users\\student\\paperTest\\results_agcrn.csv'
